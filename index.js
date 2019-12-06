@@ -33,7 +33,7 @@ module.exports = {
         // ES6/jsx stuff that's disabled for now, but maybe shouldn't be.
         // TODO(csilvers): enable these if/when community agrees on it.
         "prefer-arrow-callback": OFF,
-        "prettier/prettier": [ERROR, require("./prettierrc.js")],
+        "prettier/prettier": ["error", require("./.prettierrc.js")],
     },
     parser: "babel-eslint",
     env: {
@@ -44,5 +44,5 @@ module.exports = {
         es6: true,
         jest: true,
     },
-    extends: ["./shared.js", "./flow.js", "./react.js", "./prettier.js"],
+    extends: ["./shared.js", "./flow.js", "./react.js"],
 };
