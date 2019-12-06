@@ -38,5 +38,5 @@ module.exports = {
         es6: true,
         jest: true,
     },
-    extends: ["./shared.js", "./flow.js", "./react.js"],
+    extends: ["./shared.js", "./flow.js", "./react.js", "./prettier.js"],
 };
