@@ -35,7 +35,8 @@ module.exports = {
         // files, get rid of this next line.
         "node": true,
         "browser": true,
-        "es6": true
+        "es6": true,
+        "jest": true,
     },
     "extends": [
         "./shared.js",
