@@ -9,12 +9,12 @@ const ERROR = "error";
 module.exports = {
     rules: {
         "flowtype/boolean-style": [ERROR, "boolean"],
-        "flowtype/define-flow-type": "warn", // suppress no-undef on flow types
+        "flowtype/define-flow-type": WARN, // suppress no-undef on flow types
         "flowtype/no-dupe-keys": ERROR,
 
         // Use Flow's version of no-unused-expressions
         "flowtype/no-unused-expressions": [
-            2,
+            ERROR,
             {allowShortCircuit: true, allowTernary: true},
         ],
         "no-unused-expressions": OFF, // Disable this rule as flowtype/no-unused-expression supersedes it
