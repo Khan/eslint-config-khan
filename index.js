@@ -9,25 +9,31 @@
 // modify shared.js instead.  In particular, when adjusting the
 // list of built-in globals (useful for both javascript files and
 // <script> contents inside html), do that in shared.js.
+
+const OFF = "off";
+const WARN = "warn";
+const ERROR = "error";
+
 module.exports = {
     rules: {
         // ---------------------------------------
         // ES6 rules.
-        "constructor-super": 2,
-        "no-const-assign": 2,
-        "no-this-before-super": 2,
-        "no-var": 2,
-        "prefer-const": 2,
-        "prefer-spread": 2,
+        "constructor-super": ERROR,
+        "no-const-assign": ERROR,
+        "no-this-before-super": ERROR,
+        "no-var": ERROR,
+        "prefer-const": ERROR,
+        "prefer-spread": ERROR,
         // We turned this off because it complains when you have a
         // multi-line string, which I think is going too far.
-        "prefer-template": 0,
+        "prefer-template": OFF,
         // We've decided explicitly not to care about this.
-        "arrow-parens": 0,
+        "arrow-parens": OFF,
         // ---------------------------------------
         // ES6/jsx stuff that's disabled for now, but maybe shouldn't be.
         // TODO(csilvers): enable these if/when community agrees on it.
-        "prefer-arrow-callback": 0,
+        "prefer-arrow-callback": OFF,
+        "prettier/prettier": [ERROR, require("./prettierrc.js")],
     },
     parser: "babel-eslint",
     env: {
