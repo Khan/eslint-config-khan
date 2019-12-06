@@ -10,7 +10,7 @@
 // list of built-in globals (useful for both javascript files and
 // <script> contents inside html), do that in shared.js.
 module.exports = {
-    "rules": {
+    rules: {
         // ---------------------------------------
         // ES6 rules.
         "constructor-super": 2,
@@ -27,20 +27,16 @@ module.exports = {
         // ---------------------------------------
         // ES6/jsx stuff that's disabled for now, but maybe shouldn't be.
         // TODO(csilvers): enable these if/when community agrees on it.
-        "prefer-arrow-callback": 0
+        "prefer-arrow-callback": 0,
     },
-    "parser": "babel-eslint",
-    "env": {
+    parser: "babel-eslint",
+    env: {
         // TODO(csilvers): once we properly use node.js for node
         // files, get rid of this next line.
-        "node": true,
-        "browser": true,
-        "es6": true,
-        "jest": true,
+        node: true,
+        browser: true,
+        es6: true,
+        jest: true,
     },
-    "extends": [
-        "./shared.js",
-        "./flow.js",
-        "./react.js",
-    ]
-}
+    extends: ["./shared.js", "./flow.js", "./react.js"],
+};

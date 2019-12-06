@@ -5,7 +5,7 @@
 // If you want to adjust/add a rule that is not specific to what
 // browsers do or do not support, modify shared.js instead.
 module.exports = {
-    "rules": {
+    rules: {
         // NOTE: we can support 'const' one day; though cf. 'let'.
         // http://caniuse.com/#feat=const
 
@@ -16,14 +16,14 @@ module.exports = {
         // And the way we remove template tags often introduces weird
         // whitespace and line-joins, so we can't check for whitespace or
         // too-long-line errors either.
-        "indent": 0,
+        indent: 0,
         "max-len": 0,
         "max-lines": 0,
-        "no-trailing-spaces": 0
+        "no-trailing-spaces": 0,
     },
-    "globals": {},
-    "env": {
-        "browser": true
+    globals: {},
+    env: {
+        browser: true,
     },
-    "extends": "./shared.js"
-}
+    extends: "./shared.js",
+};

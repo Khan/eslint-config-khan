@@ -14,12 +14,12 @@
 // a change that accounts for some quirks in node.js in particular.
 
 module.exports = {
-    "rules": {
-        "no-console": 0
+    rules: {
+        "no-console": 0,
     },
-    "globals": {},
-    "env": {
-        "node": true
+    globals: {},
+    env: {
+        node: true,
     },
-    "extends": "./index.js"
-}
+    extends: "./index.js",
+};

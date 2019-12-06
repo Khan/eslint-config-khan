@@ -2,8 +2,8 @@
 // https://github.com/yannickcr/eslint-plugin-react
 // https://facebook.github.io/react/
 module.exports = {
-    "rules": {
-        "react/forbid-prop-types": [2, { "forbid": [ "array", "object" ] }],
+    rules: {
+        "react/forbid-prop-types": [2, {forbid: ["array", "object"]}],
         "react/jsx-no-duplicate-props": 2,
         // This triggers a ton on stuff like 'if (window.x) { x(...) }'.
         "react/jsx-no-undef": 2,
@@ -14,16 +14,19 @@ module.exports = {
         "react/no-direct-mutation-state": 2,
         "react/prop-types": 2,
         "react/self-closing-comp": 2,
-        "react/sort-comp": [2, {
-            // TODO(kevinb): specify where "constructor" should go
-            "order": [
-                "type-annotations",
-                "static-methods",
-                "lifecycle",
-                "everything-else",
-                "render"
-            ]
-        }],
+        "react/sort-comp": [
+            2,
+            {
+                // TODO(kevinb): specify where "constructor" should go
+                order: [
+                    "type-annotations",
+                    "static-methods",
+                    "lifecycle",
+                    "everything-else",
+                    "render",
+                ],
+            },
+        ],
         "react/no-unsafe": 1,
         "react/no-deprecated": 1,
         // TODO(riley): Introduce this rule once we upgrade to >= 2.0.0.
@@ -36,15 +39,11 @@ module.exports = {
         // We turned this off too as we didn't see an explicit benefit
         "react/sort-prop-types": 0,
     },
-    "extends": [
-        "prettier/react"
-    ],
-    "plugins": [
-        "react"
-    ],
-    "settings": {
-        "react": {
-            "version": "16.3"
-        }
-    }
-}
+    extends: ["prettier/react"],
+    plugins: ["react"],
+    settings: {
+        react: {
+            version: "16.3",
+        },
+    },
+};

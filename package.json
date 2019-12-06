@@ -1,27 +1,38 @@
 {
-  "name": "@khanacademy/eslint-config",
-  "version": "0.0.3",
-  "publishConfig": {
-    "access": "public"
-  },
-  "main": "index.js",
-  "repository": "git@github.com:Khan/eslint-config-khan.git",
-  "author": "Kevin Barabash <kevinb@khanacademy.org>",
-  "license": "MIT",
-  "dependencies": {},
-  "peerDependencies": {
-    "eslint": "5.8.0",
-    "eslint-config-prettier": "3.1.0",
-    "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-eslint-comments": "^3.1.2",
-    "eslint-plugin-flowtype": "3.2.0",
-    "eslint-plugin-graphql": "2.1.1",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-prettier": "3.0.0",
-    "eslint-plugin-react": "7.11.1",
-    "eslint-plugin-react-hooks": "^1.6.1",
-    "eslint-plugin-react-native": "^3.7.0",
-    "eslint-plugin-react-native-animation-linter": "0.1.2"
-  }
+    "name": "@khanacademy/eslint-config",
+    "version": "0.0.3",
+    "publishConfig": {
+        "access": "public"
+    },
+    "main": "index.js",
+    "repository": "git@github.com:Khan/eslint-config-khan.git",
+    "author": "Kevin Barabash <kevinb@khanacademy.org>",
+    "license": "MIT",
+    "dependencies": {},
+    "peerDependencies": {
+        "eslint": "5.8.0",
+        "eslint-config-prettier": "3.1.0",
+        "eslint-plugin-babel": "^5.3.0",
+        "eslint-plugin-eslint-comments": "^3.1.2",
+        "eslint-plugin-flowtype": "3.2.0",
+        "eslint-plugin-graphql": "2.1.1",
+        "eslint-plugin-import": "^2.18.0",
+        "eslint-plugin-jsx-a11y": "^6.1.2",
+        "eslint-plugin-prettier": "3.0.0",
+        "eslint-plugin-react": "7.11.1",
+        "eslint-plugin-react-hooks": "^1.6.1",
+        "eslint-plugin-react-native": "^3.7.0",
+        "eslint-plugin-react-native-animation-linter": "0.1.2"
+    },
+    "devDependencies": {
+        "pre-commit": "^1.2.2",
+        "prettier": "^1.19.1",
+        "pretty-quick": "^2.0.1"
+    },
+    "scripts": {
+        "pretty-quick": "pretty-quick --staged"
+    },
+    "pre-commit": [
+        "pretty-quick"
+    ]
 }

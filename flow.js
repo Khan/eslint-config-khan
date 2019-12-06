@@ -2,38 +2,38 @@
 // https://github.com/gajus/eslint-plugin-flowtype
 // https://flowtype.org/
 module.exports = {
-    "rules": {
+    rules: {
         "flowtype/boolean-style": [2, "boolean"],
         "flowtype/define-flow-type": 1, // suppress no-undef on flow types
         "flowtype/no-dupe-keys": 2,
 
         // Use Flow's version of no-unused-expressions
-        "flowtype/no-unused-expressions": [2, {"allowShortCircuit": true, "allowTernary": true}],
+        "flowtype/no-unused-expressions": [
+            2,
+            {allowShortCircuit: true, allowTernary: true},
+        ],
         "no-unused-expressions": 0, // Disable this rule as flowtype/no-unused-expression supersedes it
 
-        "flowtype/no-weak-types": 0,    // allow 'any' for now
+        "flowtype/no-weak-types": 0, // allow 'any' for now
         // flow may still require parameter types in certain situations
         "flowtype/require-parameter-type": 0,
         "flowtype/require-return-type": 0,
         "flowtype/require-valid-file-annotation": [
             2,
-            "always", {
-                "annotationStyle": "line"
-            }
+            "always",
+            {
+                annotationStyle: "line",
+            },
         ],
         "flowtype/sort": 0,
         "flowtype/type-id-match": 0,
-        "flowtype/use-flow-type": 1,  // suppress no-unused-vars on flow types
+        "flowtype/use-flow-type": 1, // suppress no-unused-vars on flow types
     },
-    "settings": {
-        "flowtype": {
-            "onlyFilesWithFlowAnnotation": true
-        }
+    settings: {
+        flowtype: {
+            onlyFilesWithFlowAnnotation: true,
+        },
     },
-    "extends": [
-        "prettier/flowtype"
-    ],
-    "plugins": [
-        "flowtype"
-    ]
-}
+    extends: ["prettier/flowtype"],
+    plugins: ["flowtype"],
+};
