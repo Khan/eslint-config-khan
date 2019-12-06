@@ -28,6 +28,7 @@ module.exports = {
         // ES6/jsx stuff that's disabled for now, but maybe shouldn't be.
         // TODO(csilvers): enable these if/when community agrees on it.
         "prefer-arrow-callback": 0,
+        "prettier/prettier": ["error", require("./.prettierrc.js")],
     },
     parser: "babel-eslint",
     env: {
