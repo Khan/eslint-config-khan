@@ -31,7 +31,7 @@ module.exports = {
         /**
          * built-in rules
          */
-        "arrow-parens": OFF, // we've decided explicitly not to care about this.
+        "arrow-parens": OFF, // We've decided explicitly not to care about this.
         "constructor-super": ERROR,
         camelcase: [
             ERROR,
@@ -47,7 +47,7 @@ module.exports = {
         "max-lines": [ERROR, 1000],
         "no-alert": ERROR,
         "no-array-constructor": ERROR,
-        "no-case-declarations": OFF, // TODO(kevinb): enable this
+        "no-case-declarations": OFF, // TODO(kevinb): Enable this.
         "no-console": ERROR,
         "no-const-assign": ERROR,
         "no-debugger": ERROR,
@@ -62,7 +62,7 @@ module.exports = {
         "no-undef": ERROR,
         "no-unexpected-multiline": ERROR,
         "no-unreachable": ERROR,
-        "no-unused-expressions": OFF, // superseded by flowtype/no-unused-expressions
+        "no-unused-expressions": OFF, // This is superseded by flowtype/no-unused-expressions.
         "no-unused-vars": [ERROR, {args: "none", varsIgnorePattern: "^_*$"}],
         "no-useless-call": ERROR,
         "no-var": ERROR,
@@ -71,23 +71,23 @@ module.exports = {
         "prefer-arrow-callback": OFF, // TODO(kevinb): enable this and then disable it in webapp
         "prefer-const": ERROR,
         "prefer-spread": ERROR,
-        "prefer-template": OFF, // it complains when you have a multi-line string, which is going too far.
-        "require-jsdoc": OFF, // adding jsdocs to everything is overly burdensome
+        "prefer-template": OFF, // It complains about multi-line strings which is going too far.
+        "require-jsdoc": OFF, // Adding jsdocs to everything is overly burdensome.
         "template-curly-spacing": OFF, // TODO(kevinb): enable this
-        "valid-jsdoc": OFF, // TODO(kevinb): enable this since we are using jdocs in some places
+        "valid-jsdoc": OFF, // TODO(kevinb): Enable this since we are using jdocs in some places.
 
         /**
          * flowtype rules
          */
         "flowtype/boolean-style": [ERROR, "boolean"],
-        "flowtype/define-flow-type": WARN, // suppress no-undef on flow types
+        "flowtype/define-flow-type": WARN, // Suppress no-undef on flow types.
         "flowtype/no-dupe-keys": ERROR,
         "flowtype/no-unused-expressions": [
             ERROR,
             {allowShortCircuit: true, allowTernary: true},
         ],
-        "flowtype/no-weak-types": OFF, // allow 'any' for now
-        "flowtype/require-parameter-type": OFF, // flow may still require parameter types in certain situations
+        "flowtype/no-weak-types": OFF, // Allow any, Object, and Function for now.
+        "flowtype/require-parameter-type": OFF, // Flow may still require parameter types in certain situations.
         "flowtype/require-return-type": OFF,
         "flowtype/require-valid-file-annotation": [
             ERROR,
@@ -98,7 +98,7 @@ module.exports = {
         ],
         "flowtype/sort": OFF,
         "flowtype/type-id-match": OFF,
-        "flowtype/use-flow-type": WARN, // suppress no-unused-vars on flow types
+        "flowtype/use-flow-type": WARN, // Suppress no-unused-vars on flow types.
 
         /**
          * jsx-a11y rules
@@ -119,7 +119,7 @@ module.exports = {
         "react/forbid-prop-types": [ERROR, {forbid: ["array", "object"]}],
         "react/jsx-no-duplicate-props": ERROR,
         "react/jsx-no-undef": ERROR,
-        "react/jsx-sort-props": OFF, // too much work for too little benefit
+        "react/jsx-sort-props": OFF, // Too little benefit, especially when all props are on the same line.
         "react/jsx-uses-react": ERROR,
         "react/jsx-uses-vars": ERROR,
         "react/no-did-mount-set-state": [ERROR],
@@ -130,7 +130,7 @@ module.exports = {
         "react/sort-comp": [
             ERROR,
             {
-                // TODO(kevinb): specify where "constructor" should go
+                // TODO(kevinb): Specify where "constructor" should go.
                 order: [
                     "type-annotations",
                     "static-methods",
@@ -140,7 +140,7 @@ module.exports = {
                 ],
             },
         ],
-        "react/sort-prop-types": OFF, // not explicit benefit
+        "react/sort-prop-types": OFF, // We tried this, but there wasn't much benefit.
         "react/no-unsafe": WARN,
         "react/no-deprecated": WARN,
     },
