@@ -96,7 +96,7 @@ module.exports = {
                 annotationStyle: "line",
             },
         ],
-        "flowtype/sort": "",
+        "flowtype/sort": OFF,
         "flowtype/type-id-match": OFF,
         "flowtype/use-flow-type": WARN, // suppress no-unused-vars on flow types
 
