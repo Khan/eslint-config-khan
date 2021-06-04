@@ -5,12 +5,7 @@ const ERROR = "error";
 module.exports = {
     parser: "babel-eslint",
     plugins: ["flowtype", "jsx-a11y", "prettier", "react"],
-    extends: [
-        "eslint:recommended",
-        "prettier",
-        "prettier/flowtype",
-        "prettier/react",
-    ],
+    extends: ["eslint:recommended", "prettier"],
     env: {
         // TODO(csilvers): once we properly use node.js for node
         // files, get rid of this next line.
@@ -24,7 +19,7 @@ module.exports = {
             onlyFilesWithFlowAnnotation: true,
         },
         react: {
-            version: "16.3", // TODO(kevinb): update to 16.4
+            version: "16.4",
         },
     },
     rules: {

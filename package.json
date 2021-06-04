@@ -10,24 +10,24 @@
     "license": "MIT",
     "dependencies": {},
     "peerDependencies": {
-        "eslint": "5.8.0",
-        "eslint-config-prettier": "3.1.0",
-        "eslint-plugin-babel": "^5.3.0",
-        "eslint-plugin-eslint-comments": "^3.1.2",
-        "eslint-plugin-flowtype": "3.2.0",
-        "eslint-plugin-graphql": "2.1.1",
-        "eslint-plugin-import": "^2.18.0",
-        "eslint-plugin-jsx-a11y": "^6.1.2",
-        "eslint-plugin-prettier": "3.0.0",
-        "eslint-plugin-react": "7.11.1",
-        "eslint-plugin-react-hooks": "^1.6.1",
-        "eslint-plugin-react-native": "^3.7.0",
-        "eslint-plugin-react-native-animation-linter": "0.1.2"
+        "eslint": "^7.27.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-babel": "^5.3.1",
+        "eslint-plugin-eslint-comments": "^3.2.0",
+        "eslint-plugin-flowtype": "^5.7.2",
+        "eslint-plugin-graphql": "^4.0.0",
+        "eslint-plugin-import": "^2.23.4",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-react": "^7.24.0",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "eslint-plugin-react-native": "^3.11.0",
+        "eslint-plugin-react-native-animation-linter": "^0.1.2"
     },
     "devDependencies": {
         "pre-commit": "^1.2.2",
-        "prettier": "^1.19.1",
-        "pretty-quick": "^2.0.1"
+        "prettier": "^2.3.0",
+        "pretty-quick": "^3.1.0"
     },
     "scripts": {
         "pretty-quick": "pretty-quick --staged"
