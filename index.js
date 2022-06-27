@@ -4,8 +4,12 @@ const ERROR = "error";
 
 module.exports = {
     parser: "@babel/eslint-parser",
-    plugins: ["ft-flow", "jsx-a11y", "prettier", "react"],
-    extends: ["eslint:recommended", "prettier"],
+    plugins: ["ft-flow", "jsx-a11y", "react"],
+    extends: [
+        "eslint:recommended",
+        "plugin:ft-flow/recommended",
+        "plugin:prettier/recommended",
+    ],
     env: {
         // TODO(csilvers): once we properly use node.js for node
         // files, get rid of this next line.
